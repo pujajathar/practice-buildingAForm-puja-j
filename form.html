@@ -4,22 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Building Form</title>
+    <link rel="stylesheet" href="style.css">
+   
 </head>
 <body>
 
-    <h1><strong>Feedback Form</strong></h1>
+    <h1><strong>We would love your feedback !</strong></h1>
 
 <form action="/submit" method="post">
+    <div class="details">
     <label for="full name">Full name:</label>
     <input type="text" id="full name" name="full name" placeholder="Enter your full name..">
      
     <label for="email address">Email Address:</label>
     <input type="email" id="email address" name="email address" placeholder="Enter your email id.." required>
     <label for="password">Password:</label>
-    <input type="password" id="password" value="Password" maxlength="16" required>
+    <input type="password" id="password"  maxlength="16"  required>
+    </div>
     <br>
+
     <br>
-    <fieldset>
+    <fieldset id="method">
         <legend> Prefered Contact Method:</legend>
         <label for="email">
             <input type="radio" id="email" name="contact" value="email">
@@ -33,7 +38,7 @@
     </fieldset>
      <br>
 
-    <fieldset>
+    <fieldset id="features">
         <legend>Additional Features of Interest:</legend>
         <label for="coding">
             <input type="checkbox" id="coding" name="interest" value="coding">
@@ -68,16 +73,18 @@
     </select>
 </fieldset>
 <br>
+<div class="textarea">
 <label for="comments">Comments:</label><br><br>
 <textarea id="comments" name="comments" rows="5" cols="35" placeholder="Enter your comments here...">
 </textarea>
-
+</div>
 
    <br>
    <br>
     <br>
-   <input type="submit" value="Submit">
-
+    <div class="submit">
+        <button type="submit" value="Submit">Submit</button>
+  </div>
 
 </form>
 

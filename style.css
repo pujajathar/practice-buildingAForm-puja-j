@@ -1,0 +1,38 @@
+h1{
+    background-color: rgb(220, 244, 244);
+    margin: 15px;
+    margin-left:  100px;
+}
+
+label{
+  
+    background-color: rgb(197, 241, 241);
+    font-style:normal;
+    font-size:large;
+   
+    
+}
+fieldset{
+  
+    width: 700px;
+    margin-left: 100px;
+}
+legend{
+    
+    font-size: larger;
+    
+}
+#method {
+   
+    width: 250px;
+    margin-left: 100px;
+    
+}
+.details, .textarea{
+    margin-left: 100px;
+   padding-top: 10px;
+    }
+ .submit{
+    margin-left: 100px;
+    
+   }   
